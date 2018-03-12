@@ -29,7 +29,7 @@ ccp_vars_anchor: &ccp_default_vars
   platform: centos6
 
 ccp_gen_cluster_default_params_anchor: &ccp_gen_cluster_default_params
-  AWS_ACCESS_KEY_ID: AKIAIGUPHAQ4Q7YJZKZF
+  AWS_ACCESS_KEY_ID: {{tf-machine-access-id}}
   AWS_SECRET_ACCESS_KEY: {{tf-machine-secret-access-key}}
   AWS_DEFAULT_REGION: {{aws-region}}
   BUCKET_PATH: clusters/
