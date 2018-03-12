@@ -1,0 +1,15 @@
+os:
+  - linux
+
+language: c
+
+before_script:
+  - git clone https://github.com/awslabs/git-secrets.git
+  - pushd git-secrets
+  - make install
+  - popd
+  - git secrets --install
+  - git secrets --register-aws
+
+script:
+  - git secrets --scan  
